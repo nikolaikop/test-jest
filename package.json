@@ -1,0 +1,50 @@
+{
+  "name": "jest_test",
+  "version": "1.0.0",
+  "description": "jest test",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "coverage": "jest --collectCoverage",
+    "eslint": "eslint"
+  },
+  "jest": {
+    "verbose": true,
+    "collectCoverage": true,
+    "coverageReporters": [
+      "html"
+    ],
+    "collectCoverageFrom": [
+      "**/*.{js,jsx}",
+      "!**/node_modules/**",
+      "!**/coverage/**",
+      "!**eslint-plugin-prettier.js**"
+    ],
+    "coverageThreshold": {
+      "branches": 100,
+      "functions": 100,
+      "lines": 100
+    }
+  },
+  "keywords": [
+    "jest",
+    "test",
+    "jsaqa"
+  ],
+  "author": "omelnikova",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^27.5.1",
+    "prettier": "2.6.2"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "eslint": "^8.12.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-unicorn": "^42.0.0",
+    "eslint-plugin-prettier": "^4.0.0"
+  }
+}
